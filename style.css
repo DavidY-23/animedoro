@@ -1,0 +1,29 @@
+body
+{
+    background: #696969;
+}
+
+.timer
+{
+    text-align: center;
+    border: 5 px solid #fff;
+}
+.row{
+    text-align: center;  
+}
+
+.buttons
+{
+    text-align: center;
+}
+.buttons:hover
+{
+    border: 2 px solid #fff;
+    transition: 0.3s ease;
+}
+
+.show_message{
+    display: block;
+    text-align: center;
+
+}
