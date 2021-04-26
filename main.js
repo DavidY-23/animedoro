@@ -16,8 +16,8 @@ function start()
     if (document.getElementById("startButton").value == "start")
     {
         //39, 59
-        minutes = 00;
-        seconds = 10;
+        minutes = 39;
+        seconds = 59;
     
         console.log("im playing!!");
         var minutes_interval = setInterval(minutesTimer, 60000);
@@ -61,6 +61,7 @@ function start()
     //To make it pause, does not work! :D
     else if (document.getElementById("startButton").value == "pause")
     {
+
         console.log("im in.");
         document.getElementById("startButton").value = "start";
         clearInterval(minutes_interval);                
@@ -69,6 +70,10 @@ function start()
     //For anime break.
     else if (document.getElementById("startButton").value == "animebreak")
     {
+        //23, 59
+        minutes = 23;
+        seconds = 59;
+
         console.log("breaky");
         var minutes_interval = setInterval(minutesTimer, 60000);
         var seconds_interval = setInterval(secondsTimer, 1000);
@@ -97,7 +102,7 @@ function start()
                     document.getElementById("done").innerHTML = "back to work!";
                     document.getElementById("done").classList.add("show_message");
                     bell.play();
-                    minutes = 23;
+                    minutes = 40;
                     seconds = 00;
                     document.getElementById("minutes").innerHTML = minutes;
                     document.getElementById("seconds").innerHTML = seconds;
